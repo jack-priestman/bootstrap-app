@@ -10,6 +10,9 @@
     "apps/*"
   ],
   "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/morgan": "^1.9.9",
     "turbo": "^2.3.3"
   },
   "scripts": {

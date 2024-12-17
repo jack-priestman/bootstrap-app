@@ -1,25 +1,14 @@
-import { PrismaClient } from "@prisma/client";
+import express from "express";
+import morgan from "morgan";
+import cors from "cors";
 
-const prisma = new PrismaClient();
+const PORT = 8080;
 
-async function main() {
-  const allUsers = await prisma.user.findMany({
-    include: {
-      posts: true,
-      profile: true,
-    },
-  });
-  console.dir(allUsers, { depth: null });
-}
+const app = express();
+app.use(morgan("dev"));
+app.use(cors());
+app.use(express.json());
 
-//
-
-main()
-  .then(async () => {
-    await prisma.$disconnect();
-  })
-  .catch(async (e) => {
-    console.error(e);
-    await prisma.$disconnect();
-    process.exit(1);
-  });
+app.listen(PORT, () =>
+  console.log("Server running and listening on https://locahost:8080")
+);
