@@ -1,3 +1,5 @@
+This is a shell for a fullstack app.
+
 Source file: https://docs.google.com/document/d/1TwZhQ99kL4-Qu0xAcMJAazY29jpmhl9oq_ZXMVNV9fM/edit?tab=t.0#heading=h.8uchxb7gmm77
 
 Root:
