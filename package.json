@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jack-priestman/bootstrap-app.git",
+  "author": "Jack Priestman <jack.priestman@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel"
+  },
+  "packageManager": "yarn@1.22.22"
+}
